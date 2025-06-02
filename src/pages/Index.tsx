@@ -125,28 +125,27 @@ const paymentMethods = [
 // Testimonials data
 const testimonials = [
   {
-    name: "Rahul Kumar",
+    name: "Arimra N sangma",
     rating: 5,
     comment:
       "Super fast delivery! Got my diamonds in 2 minutes. Best prices I've found online!",
     avatar: "👨‍💻",
   },
   {
-    name: "Priya Singh",
+    name: "Salakim B Marak",
     rating: 5,
     comment:
       "Amazing service! Saved 40% compared to in-game prices. Highly recommended!",
     avatar: "👩‍🎓",
   },
   {
-    name: "Arjun Patel",
+    name: "Bidarik ch sangma",
     rating: 5,
     comment:
       "Instant delivery and great customer support. Will definitely buy again!",
     avatar: "🧑‍💼",
   },
 ];
-
 // FAQ data
 const faqs = [
   {

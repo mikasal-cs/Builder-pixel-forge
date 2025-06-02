@@ -987,7 +987,6 @@ const Index = () => {
               Your trusted partner for Mobile Legends diamond recharge. Fast,
               safe, and affordable.
             </p>
-
             <div className="flex justify-center space-x-6 mb-4">
               <Button
                 variant="ghost"

@@ -939,6 +939,428 @@ const Index = () => {
         </DialogContent>
       </Dialog>
 
+      {/* About Us Modal */}
+      <Dialog open={showAboutModal} onOpenChange={setShowAboutModal}>
+        <DialogContent className="bg-gray-900 border-purple-500/30 text-white max-w-4xl max-h-[80vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle className="text-3xl font-bold text-center mb-4">
+              About Us
+            </DialogTitle>
+          </DialogHeader>
+          <div className="space-y-6 p-4">
+            <div className="text-center">
+              <p className="text-gray-300 leading-relaxed mb-6">
+                Welcome to Salra Store—the premier destination for Mobile
+                Legends diamond top-ups. Born from our shared passion for gaming
+                and technology, we've built a platform that delivers
+                lightning-fast transactions, rock-solid reliability, and truly
+                personal support.
+              </p>
+            </div>
+
+            <div className="border-t border-purple-500/30 pt-6">
+              <h3 className="text-2xl font-semibold text-purple-300 mb-4 flex items-center">
+                👨‍💻 About the Developer
+              </h3>
+              <p className="text-gray-300 leading-relaxed">
+                Mikasal B. Marak is the creative force who brought Salra Store
+                to life. A lifelong gamer himself, Mikasal channels the same
+                drive that powers his top-ranked Mobile Legends matches into
+                crafting seamless, user-friendly experiences. He specializes in
+                a wide array of modern technologies—React, TypeScript,
+                JavaScript, Python, HTML, CSS, Tailwind CSS, and more—ensuring
+                every line of code is clean, efficient, and future-proof. When
+                he's not optimizing your top-up journey, you'll find him diving
+                into the latest game releases, mastering new challenges, and
+                sharing pro tips with the community.
+              </p>
+            </div>
+
+            <div className="border-t border-purple-500/30 pt-6">
+              <h3 className="text-2xl font-semibold text-purple-300 mb-4 flex items-center">
+                🧑‍💼 About the Owner
+              </h3>
+              <p className="text-gray-300 leading-relaxed">
+                Jeush Salra Ch. Marak is the visionary entrepreneur behind Salra
+                Store. An avid gamer who's spent countless hours battling on the
+                MLBB battlefield, Jeush knows exactly what players need: speed,
+                affordability, and unwavering trust. From forging key
+                partnerships to overseeing every order, he goes the extra mile
+                to make sure your diamonds arrive swiftly and safely. Outside of
+                steering Salra Store's growth, Jeush can often be spotted
+                perfecting his clutch plays and exploring fresh strategies in
+                his favorite Mobile Legends modes.
+              </p>
+            </div>
+
+            <div className="border-t border-purple-500/30 pt-6">
+              <h3 className="text-2xl font-semibold text-purple-300 mb-4 flex items-center">
+                🎯 Our Motive
+              </h3>
+              <p className="text-gray-300 leading-relaxed mb-4">
+                Our mission is simple yet powerful:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-gray-300 ml-4">
+                <li>
+                  <strong>Fuel your victories.</strong> Keep you in the game
+                  with affordable diamond top-ups delivered in minutes.
+                </li>
+                <li>
+                  <strong>Simplify every step.</strong> UPI and Google Pay
+                  only—no hassle, no hidden fees.
+                </li>
+                <li>
+                  <strong>Stand by your side.</strong> Real-time support via
+                  WhatsApp and Instagram, with answers from gamers who
+                  understand your needs.
+                </li>
+                <li>
+                  <strong>Grow together.</strong> Build a vibrant community
+                  where players lift each other up, share insights, and
+                  celebrate wins.
+                </li>
+              </ul>
+            </div>
+
+            <div className="border-t border-purple-500/30 pt-6">
+              <div className="bg-purple-900/20 border border-purple-500/30 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold text-purple-300 mb-3">
+                  Contact Information
+                </h4>
+                <div className="space-y-2">
+                  <p className="text-gray-300">
+                    <strong>Owner:</strong> Jeush Salra Ch. Marak
+                  </p>
+                  <p className="text-gray-300">
+                    <strong>Developer:</strong> Mikasal B Marak
+                  </p>
+                  <p className="text-gray-300">
+                    <strong>Contact:</strong> +91 60093 91336
+                  </p>
+                  <p className="text-gray-300">
+                    <strong>Email:</strong> jeushsalrachmarak@gmail.com
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Terms of Service Modal */}
+      <Dialog open={showTermsModal} onOpenChange={setShowTermsModal}>
+        <DialogContent className="bg-gray-900 border-purple-500/30 text-white max-w-4xl max-h-[80vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle className="text-3xl font-bold text-center mb-4">
+              📋 Terms of Service
+            </DialogTitle>
+          </DialogHeader>
+          <div className="space-y-6 p-4">
+            <p className="text-gray-300 text-center">
+              Welcome to our Mobile Legends Top-Up website. By using this
+              website, you agree to be bound by the following Terms of Service.
+              Please read them carefully before making any purchase.
+            </p>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-purple-300">
+                1. General
+              </h3>
+              <p className="text-gray-300">
+                This website is owned and operated by Jeush Salra Ch. Marak, and
+                developed by Mikasal B Marak. The services provided here are for
+                topping up Mobile Legends diamonds for valid MLBB player
+                accounts.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-purple-300">
+                2. Eligibility
+              </h3>
+              <p className="text-gray-300 mb-3">
+                To use our services, you must:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-gray-300 ml-4">
+                <li>
+                  Provide accurate and complete Mobile Legends ID and server ID.
+                </li>
+                <li>
+                  Be authorized to make payments using the payment methods you
+                  provide.
+                </li>
+                <li>
+                  Agree that this is a digital product and delivery will be
+                  online.
+                </li>
+              </ul>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-purple-300">
+                3. Pricing & Payment
+              </h3>
+              <ul className="list-disc list-inside space-y-2 text-gray-300 ml-4">
+                <li>All prices are in INR and subject to change.</li>
+                <li>
+                  Payment must be made in full via Google Pay or UPI to the UPI
+                  ID:{" "}
+                  <span className="font-mono bg-purple-900/30 px-2 py-1 rounded">
+                    jeushsalrachmarak@oksbi
+                  </span>
+                  .
+                </li>
+              </ul>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-purple-300">
+                4. Delivery
+              </h3>
+              <ul className="list-disc list-inside space-y-2 text-gray-300 ml-4">
+                <li>
+                  Diamond top-ups are usually delivered within 5–30 minutes, but
+                  in rare cases, it may take up to 24 hours.
+                </li>
+                <li>
+                  Please ensure you enter the correct game ID and server ID. We
+                  are not responsible for incorrect entries.
+                </li>
+              </ul>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-purple-300">
+                5. Prohibited Uses
+              </h3>
+              <p className="text-gray-300 mb-3">
+                You agree not to misuse this website for:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-gray-300 ml-4">
+                <li>Fraudulent purchases</li>
+                <li>Reverse engineering or hacking</li>
+                <li>Harassment or illegal activities</li>
+              </ul>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-purple-300">
+                6. Termination
+              </h3>
+              <p className="text-gray-300">
+                We reserve the right to refuse service or terminate accounts if
+                abuse or suspicious activity is detected.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-purple-300">
+                7. Contact
+              </h3>
+              <p className="text-gray-300 mb-3">
+                For any support or inquiries, please contact:
+              </p>
+              <div className="bg-purple-900/20 border border-purple-500/30 p-4 rounded-lg">
+                <div className="space-y-2">
+                  <p className="text-blue-300">📞 +91 60093 91336</p>
+                  <p className="text-blue-300">
+                    📧 jeushsalrachmarak@gmail.com
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Privacy Policy Modal */}
+      <Dialog open={showPrivacyModal} onOpenChange={setShowPrivacyModal}>
+        <DialogContent className="bg-gray-900 border-purple-500/30 text-white max-w-4xl max-h-[80vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle className="text-3xl font-bold text-center mb-4">
+              🔒 Privacy Policy
+            </DialogTitle>
+          </DialogHeader>
+          <div className="space-y-6 p-4">
+            <p className="text-gray-300 text-center">
+              We value your privacy. This policy explains what data we collect,
+              how we use it, and how it's protected.
+            </p>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-purple-300">
+                1. Information We Collect
+              </h3>
+              <p className="text-gray-300 mb-3">We collect:</p>
+              <ul className="list-disc list-inside space-y-2 text-gray-300 ml-4">
+                <li>Your name, email, and contact number (for support)</li>
+                <li>
+                  Your Mobile Legends ID and Server ID (for top-up processing)
+                </li>
+                <li>Payment confirmation details (for order tracking)</li>
+              </ul>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-purple-300">
+                2. How We Use Your Information
+              </h3>
+              <ul className="list-disc list-inside space-y-2 text-gray-300 ml-4">
+                <li>To process your diamond top-up</li>
+                <li>To send you order updates and support responses</li>
+                <li>To improve our service</li>
+              </ul>
+              <div className="bg-green-900/20 border border-green-500/30 p-4 rounded-lg mt-4">
+                <p className="text-green-300 font-medium">
+                  ✅ We do not sell or share your data with third parties.
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-purple-300">
+                3. Cookies & Tracking
+              </h3>
+              <p className="text-gray-300">
+                We may use basic analytics (like page views or visit duration),
+                but no personal data is tracked without your knowledge.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-purple-300">
+                4. Data Security
+              </h3>
+              <p className="text-gray-300">
+                Your data is stored securely. All payment details are handled
+                through Google Pay/UPI, and we do not store any sensitive
+                financial information.
+              </p>
+              <div className="bg-blue-900/20 border border-blue-500/30 p-4 rounded-lg">
+                <p className="text-blue-300">
+                  🔐 Your payment information is processed directly by Google
+                  Pay/UPI and never stored on our servers.
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-purple-300">
+                5. Your Rights
+              </h3>
+              <p className="text-gray-300 mb-3">
+                You may request deletion of your stored data at any time by
+                contacting:
+              </p>
+              <div className="bg-purple-900/20 border border-purple-500/30 p-4 rounded-lg">
+                <p className="text-blue-300">📧 jeushsalrachmarak@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Refund Policy Modal */}
+      <Dialog open={showRefundModal} onOpenChange={setShowRefundModal}>
+        <DialogContent className="bg-gray-900 border-purple-500/30 text-white max-w-4xl max-h-[80vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle className="text-3xl font-bold text-center mb-4">
+              💸 Refund Policy
+            </DialogTitle>
+          </DialogHeader>
+          <div className="space-y-6 p-4">
+            <p className="text-gray-300 text-center">
+              As we sell digital products (Mobile Legends Diamonds), our refund
+              policy is as follows:
+            </p>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-red-300">
+                1. Non-Refundable
+              </h3>
+              <div className="bg-red-900/20 border border-red-500/30 p-4 rounded-lg">
+                <p className="text-red-300 font-medium">
+                  ⚠️ Once a top-up is successfully processed and diamonds are
+                  delivered, the purchase is non-refundable.
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-green-300">
+                2. Refund Eligibility
+              </h3>
+              <p className="text-gray-300 mb-3">
+                Refunds will only be considered if:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-gray-300 ml-4">
+                <li>
+                  Payment was made but the diamonds were not delivered within 24
+                  hours
+                </li>
+                <li>You contact us with valid proof of payment</li>
+              </ul>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-orange-300">
+                3. Incorrect Details
+              </h3>
+              <div className="bg-orange-900/20 border border-orange-500/30 p-4 rounded-lg">
+                <p className="text-orange-300">
+                  ⚠️ If the customer provides incorrect ML ID or Server ID, and
+                  the top-up is completed, no refund will be issued. Please
+                  double-check all details before submitting.
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-purple-300">
+                4. How to Request a Refund
+              </h3>
+              <p className="text-gray-300 mb-3">Contact us with:</p>
+              <ul className="list-disc list-inside space-y-2 text-gray-300 ml-4">
+                <li>UPI payment screenshot</li>
+                <li>Time and date of transaction</li>
+                <li>Game ID and Server ID</li>
+              </ul>
+              <div className="bg-blue-900/20 border border-blue-500/30 p-4 rounded-lg mt-4">
+                <p className="text-blue-300">
+                  ⏰ We will review your request within 1–2 business days.
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-purple-300">
+                5. Contact for Refunds
+              </h3>
+              <div className="bg-purple-900/20 border border-purple-500/30 p-4 rounded-lg">
+                <div className="space-y-2">
+                  <p className="text-blue-300">📞 +91 60093 91336</p>
+                  <p className="text-blue-300">
+                    📧 jeushsalrachmarak@gmail.com
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gray-900/40 border border-gray-500/30 p-6 rounded-lg">
+              <h4 className="text-lg font-semibold text-yellow-300 mb-3">
+                ⚠️ Important Notice
+              </h4>
+              <p className="text-gray-300 text-sm">
+                Digital products like Mobile Legends Diamonds cannot be returned
+                once delivered. Please ensure all information is correct before
+                completing your purchase. Our team is here to help if you
+                experience any delivery issues.
+              </p>
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
+
       {/* Pricing Showcase */}
       <section id="pricing" className="py-16">
         <div className="container mx-auto px-4">

@@ -343,8 +343,18 @@ const featuredPackages = [
 
 // Payment methods
 const paymentMethods = [
-  { value: "upi", label: "UPI", icon: "💳" },
-  { value: "gpay", label: "Google Pay", icon: "🔵" },
+  {
+    value: "upi",
+    label: "UPI",
+    iconUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV0iptGdLmPCItza50iyipqi7rYJ50JnICA3rBrfjbVzdRq-h80UjhSSHC&s=10",
+  },
+  {
+    value: "gpay",
+    label: "Google Pay",
+    iconUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpN56bQo9N3G7xUe8TJq67SYLQJOPX1tw4xkUpDbp0_g5oi9l5rviUEQ0&s=10",
+  },
 ];
 
 // Testimonials data

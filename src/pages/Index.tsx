@@ -866,7 +866,7 @@ const Index = () => {
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white"
                 onClick={() => {
                   window.open(
-                    `upi://pay?pa=jeushsalrachmarak@oksbi&pn=JeushMikasalstore&am=${totalPrice}&cu=INR`,
+                    `upi://pay?pa=jeushsalrachmarak@oksbi&pn=Salra Store&am=${totalPrice}&cu=INR`,
                     "_blank",
                   );
                 }}

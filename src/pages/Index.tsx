@@ -1411,7 +1411,7 @@ const Index = () => {
         <Button
           size="icon"
           className="h-14 w-14 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 shadow-lg hover:shadow-purple-500/25 transition-all"
-          onClick={() => window.open("https://wa.me/1234567890", "_blank")}
+          onClick={() => window.open("https://wa.me/916009391336", "_blank")}
         >
           <MessageCircle className="h-6 w-6 text-white" />
         </Button>

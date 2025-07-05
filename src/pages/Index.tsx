@@ -520,6 +520,12 @@ const Index = () => {
               >
                 Pricing
               </a>
+              <button
+                onClick={() => setShowAboutModal(true)}
+                className="text-white hover:text-purple-400 transition-colors font-medium"
+              >
+                About Us
+              </button>
               <a
                 href="#contact"
                 className="text-white hover:text-purple-400 transition-colors font-medium"

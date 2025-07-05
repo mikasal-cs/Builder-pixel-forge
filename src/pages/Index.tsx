@@ -1397,8 +1397,8 @@ const Index = () => {
             </div>
 
             <p className="text-sm text-gray-500">
-              © 2024 JeushMikasalstore. All rights reserved. | Not affiliated
-              with Moonton or Mobile Legends.
+              © 2024 Salra Store. All rights reserved. | Not affiliated with
+              Moonton or Mobile Legends.
             </p>
           </div>
         </div>

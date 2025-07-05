@@ -1396,7 +1396,7 @@ const Index = () => {
                 variant="ghost"
                 size="sm"
                 className="text-gray-400 hover:text-white transition-colors"
-                onClick={() => window.open("/privacy-policy", "_blank")}
+                onClick={() => setShowPrivacyModal(true)}
               >
                 Privacy Policy
               </Button>
@@ -1404,7 +1404,7 @@ const Index = () => {
                 variant="ghost"
                 size="sm"
                 className="text-gray-400 hover:text-white transition-colors"
-                onClick={() => window.open("/terms-of-service", "_blank")}
+                onClick={() => setShowTermsModal(true)}
               >
                 Terms of Service
               </Button>
@@ -1412,7 +1412,7 @@ const Index = () => {
                 variant="ghost"
                 size="sm"
                 className="text-gray-400 hover:text-white transition-colors"
-                onClick={() => window.open("/refund-policy", "_blank")}
+                onClick={() => setShowRefundModal(true)}
               >
                 Refund Policy
               </Button>

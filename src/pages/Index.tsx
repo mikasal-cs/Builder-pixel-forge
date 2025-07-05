@@ -425,6 +425,10 @@ const Index = () => {
     email: "",
     message: "",
   });
+  const [showAboutModal, setShowAboutModal] = useState(false);
+  const [showTermsModal, setShowTermsModal] = useState(false);
+  const [showPrivacyModal, setShowPrivacyModal] = useState(false);
+  const [showRefundModal, setShowRefundModal] = useState(false);
   const { toast } = useToast();
 
   // Calculate pricing based on selected diamonds

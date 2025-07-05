@@ -760,27 +760,35 @@ const Index = () => {
                     <Label htmlFor="payment" className="text-white font-medium">
                       Payment Method *
                     </Label>
-                    <Select
-                      value={paymentMethod}
-                      onValueChange={setPaymentMethod}
-                      required
-                    >
-                      <SelectTrigger className="bg-white/10 border-purple-500/30 text-white">
-                        <SelectValue placeholder="Choose payment method" />
-                      </SelectTrigger>
-                      <SelectContent className="bg-gray-900 border-purple-500/30">
-                        {paymentMethods.map((method) => (
-                          <SelectItem
-                            key={method.value}
-                            value={method.value}
-                            className="text-white focus:bg-purple-500/20"
-                          >
-                            {method.icon} {method.label}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
+                    <div className="grid grid-cols-2 gap-3">
+                      {paymentMethods.map((method) => (
+                        <Button
+                          key={method.value}
+                          type="button"
+                          variant={
+                            paymentMethod === method.value
+                              ? "default"
+                              : "outline"
+                          }
+                          className={`h-12 ${
+                            paymentMethod === method.value
+                              ? "bg-purple-600 hover:bg-purple-700 border-purple-500"
+                              : "bg-white/10 hover:bg-white/20 border-purple-500/30 text-white"
+                          }`}
+                          onClick={() => {
+                            setPaymentMethod(method.value);
+                            setSelectedPaymentMethod(method.value);
+                            setShowPaymentModal(true);
+                          }}
+                        >
+                          <span className="mr-2">{method.icon}</span>
+                          {method.label}
+                        </Button>
+                      ))}
+                    </div>
                   </div>
+
+                  <div className="h-4"></div>
 
                   {isLoading && (
                     <motion.div

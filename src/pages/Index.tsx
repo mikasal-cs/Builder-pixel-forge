@@ -396,7 +396,7 @@ const faqs = [
   {
     question: "Do you offer customer support?",
     answer:
-      "Yes! Our customer support is available 24/7 via WhatsApp, Instagram, and Telegram. We respond within minutes.",
+      "Yes! Our customer support is available 24/7 via WhatsApp and Instagram. We respond within minutes.",
   },
 ];
 

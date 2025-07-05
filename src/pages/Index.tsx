@@ -307,6 +307,7 @@ const allPackages = [
 // Featured packages for showcase
 const featuredPackages = [
   {
+    value: "172",
     diamonds: "172💎",
     price: 215,
     originalPrice: 285,
@@ -315,6 +316,7 @@ const featuredPackages = [
     icon: Gem,
   },
   {
+    value: "1weekly86",
     diamonds: "1× Weekly Pass & 86💎",
     price: 230,
     originalPrice: 320,
@@ -323,6 +325,7 @@ const featuredPackages = [
     icon: Crown,
   },
   {
+    value: "500+500",
     diamonds: "500+500💎",
     price: 660,
     originalPrice: 880,

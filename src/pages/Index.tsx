@@ -1161,44 +1161,104 @@ const Index = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <Label htmlFor="name" className="text-white">
-                        Name
-                      </Label>
-                      <Input
-                        id="name"
-                        placeholder="Your name"
-                        className="bg-white/10 border-purple-500/30 text-white placeholder:text-gray-400 focus:border-purple-400"
-                      />
+                  <form
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                      if (
+                        !contactForm.name ||
+                        !contactForm.email ||
+                        !contactForm.message
+                      ) {
+                        toast({
+                          title: "Missing Information",
+                          description: "Please fill all fields before sending.",
+                          variant: "destructive",
+                        });
+                        return;
+                      }
+
+                      const subject = `New website enquiry from ${contactForm.name}`;
+                      const body = `Name: ${contactForm.name}\nEmail: ${contactForm.email}\n\nMessage:\n${contactForm.message}`;
+                      const mailtoLink = `mailto:jeushsalrachmarak@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+                      window.location.href = mailtoLink;
+
+                      toast({
+                        title: "Opening Email Client",
+                        description:
+                          "Your default email client will open with the message.",
+                      });
+
+                      // Reset form
+                      setContactForm({ name: "", email: "", message: "" });
+                    }}
+                  >
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div>
+                        <Label htmlFor="name" className="text-white">
+                          Name
+                        </Label>
+                        <Input
+                          id="name"
+                          placeholder="Your name"
+                          value={contactForm.name}
+                          onChange={(e) =>
+                            setContactForm((prev) => ({
+                              ...prev,
+                              name: e.target.value,
+                            }))
+                          }
+                          className="bg-white/10 border-purple-500/30 text-white placeholder:text-gray-400 focus:border-purple-400"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <Label htmlFor="email" className="text-white">
+                          Email
+                        </Label>
+                        <Input
+                          id="email"
+                          type="email"
+                          placeholder="Your email"
+                          value={contactForm.email}
+                          onChange={(e) =>
+                            setContactForm((prev) => ({
+                              ...prev,
+                              email: e.target.value,
+                            }))
+                          }
+                          className="bg-white/10 border-purple-500/30 text-white placeholder:text-gray-400 focus:border-purple-400"
+                          required
+                        />
+                      </div>
                     </div>
                     <div>
-                      <Label htmlFor="email" className="text-white">
-                        Email
+                      <Label htmlFor="message" className="text-white">
+                        Message
                       </Label>
-                      <Input
-                        id="email"
-                        type="email"
-                        placeholder="Your email"
+                      <Textarea
+                        id="message"
+                        placeholder="How can we help you?"
+                        value={contactForm.message}
+                        onChange={(e) =>
+                          setContactForm((prev) => ({
+                            ...prev,
+                            message: e.target.value,
+                          }))
+                        }
                         className="bg-white/10 border-purple-500/30 text-white placeholder:text-gray-400 focus:border-purple-400"
+                        rows={4}
+                        required
                       />
                     </div>
-                  </div>
-                  <div>
-                    <Label htmlFor="message" className="text-white">
-                      Message
-                    </Label>
-                    <Textarea
-                      id="message"
-                      placeholder="How can we help you?"
-                      className="bg-white/10 border-purple-500/30 text-white placeholder:text-gray-400 focus:border-purple-400"
-                      rows={4}
-                    />
-                  </div>
-                  <Button className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white">
-                    <Send className="mr-2 h-4 w-4" />
-                    Send Message
-                  </Button>
+                    <Button
+                      type="submit"
+                      className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white"
+                    >
+                      <Send className="mr-2 h-4 w-4" />
+                      Send Message
+                    </Button>
+                  </form>
                 </CardContent>
               </Card>
             </motion.div>

@@ -1369,25 +1369,28 @@ const Index = () => {
               Your trusted partner for Mobile Legends diamond recharge. Fast,
               safe, and affordable.
             </p>
-            <div className="flex justify-center space-x-6 mb-4">
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mb-4">
               <Button
                 variant="ghost"
                 size="sm"
-                className="text-gray-400 hover:text-white"
+                className="text-gray-400 hover:text-white transition-colors"
+                onClick={() => window.open("/privacy-policy", "_blank")}
               >
                 Privacy Policy
               </Button>
               <Button
                 variant="ghost"
                 size="sm"
-                className="text-gray-400 hover:text-white"
+                className="text-gray-400 hover:text-white transition-colors"
+                onClick={() => window.open("/terms-of-service", "_blank")}
               >
                 Terms of Service
               </Button>
               <Button
                 variant="ghost"
                 size="sm"
-                className="text-gray-400 hover:text-white"
+                className="text-gray-400 hover:text-white transition-colors"
+                onClick={() => window.open("/refund-policy", "_blank")}
               >
                 Refund Policy
               </Button>

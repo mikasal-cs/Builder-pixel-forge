@@ -1288,7 +1288,7 @@ const Index = () => {
                       variant="outline"
                       className="w-full justify-start bg-green-600 hover:bg-green-700 border-green-500 text-white"
                       onClick={() =>
-                        window.open("https://wa.me/1234567890", "_blank")
+                        window.open("https://wa.me/916009391336", "_blank")
                       }
                     >
                       <MessageCircle className="mr-3 h-5 w-5" />
@@ -1301,25 +1301,13 @@ const Index = () => {
                       className="w-full justify-start bg-pink-600 hover:bg-pink-700 border-pink-500 text-white"
                       onClick={() =>
                         window.open(
-                          "https://instagram.com/mldiamondstore",
+                          "https://instagram.com/jeush_salra",
                           "_blank",
                         )
                       }
                     >
                       <Instagram className="mr-3 h-5 w-5" />
                       Instagram
-                      <ExternalLink className="ml-auto h-4 w-4" />
-                    </Button>
-
-                    <Button
-                      variant="outline"
-                      className="w-full justify-start bg-blue-600 hover:bg-blue-700 border-blue-500 text-white"
-                      onClick={() =>
-                        window.open("https://t.me/mldiamondstore", "_blank")
-                      }
-                    >
-                      <Send className="mr-3 h-5 w-5" />
-                      Telegram
                       <ExternalLink className="ml-auto h-4 w-4" />
                     </Button>
                   </div>

@@ -835,6 +835,84 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Payment Modal */}
+      <Dialog open={showPaymentModal} onOpenChange={setShowPaymentModal}>
+        <DialogContent className="bg-gray-900 border-purple-500/30 text-white max-w-md">
+          <DialogHeader>
+            <DialogTitle className="text-xl font-bold text-center">
+              {selectedPaymentMethod === "gpay"
+                ? "Google Pay Payment"
+                : "UPI Payment"}
+            </DialogTitle>
+          </DialogHeader>
+          <div className="space-y-6 p-4">
+            <div className="text-center">
+              <p className="text-gray-300 mb-4">
+                {selectedPaymentMethod === "gpay"
+                  ? "Complete your payment using Google Pay"
+                  : "Send payment to the UPI ID below"}
+              </p>
+
+              <div className="bg-black/40 p-4 rounded-lg border border-purple-500/30">
+                <p className="text-sm text-gray-400 mb-2">UPI ID:</p>
+                <p className="text-lg font-mono text-purple-300 break-all">
+                  jeushsalrachmarak@oksbi
+                </p>
+              </div>
+            </div>
+
+            {selectedPaymentMethod === "gpay" && (
+              <Button
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+                onClick={() => {
+                  window.open(
+                    `upi://pay?pa=jeushsalrachmarak@oksbi&pn=JeushMikasalstore&am=${totalPrice}&cu=INR`,
+                    "_blank",
+                  );
+                }}
+              >
+                <span className="mr-2">📱</span>
+                Open Google Pay
+              </Button>
+            )}
+
+            <div className="space-y-3">
+              <Button
+                variant="outline"
+                className="w-full bg-white/10 border-purple-500/30 text-white hover:bg-white/20"
+                onClick={() => {
+                  navigator.clipboard.writeText("jeushsalrachmarak@oksbi");
+                  toast({
+                    title: "UPI ID Copied!",
+                    description: "UPI ID has been copied to clipboard",
+                  });
+                }}
+              >
+                📋 Copy UPI ID
+              </Button>
+
+              <Button
+                variant="outline"
+                className="w-full bg-white/10 border-purple-500/30 text-white hover:bg-white/20"
+                onClick={() => setShowPaymentModal(false)}
+              >
+                Close
+              </Button>
+            </div>
+
+            <div className="text-center">
+              <p className="text-sm text-gray-400">
+                Amount to pay:{" "}
+                <span className="text-white font-semibold">₹{totalPrice}</span>
+              </p>
+              <p className="text-xs text-gray-500 mt-2">
+                After payment, diamonds will be delivered within 5-10 minutes
+              </p>
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
+
       {/* Pricing Showcase */}
       <section id="pricing" className="py-16">
         <div className="container mx-auto px-4">

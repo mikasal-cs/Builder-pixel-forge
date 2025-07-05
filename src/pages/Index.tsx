@@ -405,12 +405,14 @@ const Index = () => {
   const { toast } = useToast();
 
   // Calculate pricing based on selected diamonds
-  const selectedPackage = diamondPackages.find(
+  const selectedPackage = allPackages.find(
     (pkg) => pkg.value === selectedDiamonds,
   );
   const totalPrice = selectedPackage?.price || 0;
   const originalPrice = selectedPackage?.originalPrice || 0;
-  const discount = selectedPackage?.discount || 0;
+  const discount = selectedPackage
+    ? Math.round(((originalPrice - totalPrice) / originalPrice) * 100)
+    : 0;
 
   const handleRecharge = async (e: React.FormEvent) => {
     e.preventDefault();

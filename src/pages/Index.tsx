@@ -787,7 +787,11 @@ const Index = () => {
                             setShowPaymentModal(true);
                           }}
                         >
-                          <span className="mr-2">{method.icon}</span>
+                          <img
+                            src={method.iconUrl}
+                            alt={method.label}
+                            className="w-5 h-5 mr-2 object-contain"
+                          />
                           {method.label}
                         </Button>
                       ))}

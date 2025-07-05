@@ -687,16 +687,31 @@ const Index = () => {
                       <SelectTrigger className="bg-white/10 border-purple-500/30 text-white">
                         <SelectValue placeholder="Choose diamond amount" />
                       </SelectTrigger>
-                      <SelectContent className="bg-gray-900 border-purple-500/30">
-                        {diamondPackages.map((pkg) => (
-                          <SelectItem
-                            key={pkg.value}
-                            value={pkg.value}
-                            className="text-white focus:bg-purple-500/20"
-                          >
-                            {pkg.label} - ₹{pkg.price} (Save {pkg.discount}%)
-                          </SelectItem>
-                        ))}
+                      <SelectContent className="bg-gray-900 border-purple-500/30 max-h-96">
+                        {Object.entries(diamondPackages).map(
+                          ([categoryKey, packages]) => (
+                            <div key={categoryKey}>
+                              <div className="px-2 py-1.5 text-xs font-semibold text-purple-300 uppercase tracking-wide">
+                                {categoryKey === "weeklyPass"
+                                  ? "Weekly & Special Passes"
+                                  : categoryKey === "smallPack"
+                                    ? "Small Packs"
+                                    : categoryKey === "bigPack"
+                                      ? "Big Packs"
+                                      : "Double Bonus Packs"}
+                              </div>
+                              {packages.map((pkg) => (
+                                <SelectItem
+                                  key={pkg.value}
+                                  value={pkg.value}
+                                  className="text-white focus:bg-purple-500/20 pl-4"
+                                >
+                                  {pkg.label} - ₹{pkg.price}
+                                </SelectItem>
+                              ))}
+                            </div>
+                          ),
+                        )}
                       </SelectContent>
                     </Select>
                   </div>

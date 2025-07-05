@@ -339,9 +339,6 @@ const featuredPackages = [
 const paymentMethods = [
   { value: "upi", label: "UPI", icon: "💳" },
   { value: "gpay", label: "Google Pay", icon: "🔵" },
-  { value: "paytm", label: "Paytm", icon: "🔷" },
-  { value: "phonepe", label: "PhonePe", icon: "🟣" },
-  { value: "razorpay", label: "RazorPay", icon: "💙" },
 ];
 
 // Testimonials data

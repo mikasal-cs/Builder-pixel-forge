@@ -581,7 +581,7 @@ const Index = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
                 <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
                   Get Mobile Legends Diamonds
                 </span>
@@ -589,7 +589,7 @@ const Index = () => {
                 <span className="text-white">at Discounted Prices!</span>
               </h1>
 
-              <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+              <p className="text-lg sm:text-xl text-gray-300 mb-8 max-w-2xl mx-auto px-4">
                 Save up to 40% on your diamond purchases. Fast, secure, and
                 reliable delivery within minutes!
               </p>

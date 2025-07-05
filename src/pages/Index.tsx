@@ -608,14 +608,10 @@ const Index = () => {
                   Start Recharge
                 </Button>
 
-                <div className="flex items-center space-x-4 text-sm text-gray-400">
+                <div className="flex items-center space-x-6 text-sm text-gray-400">
                   <div className="flex items-center">
                     <Shield className="mr-1 h-4 w-4 text-green-400" />
                     100% Safe
-                  </div>
-                  <div className="flex items-center">
-                    <Users className="mr-1 h-4 w-4 text-blue-400" />
-                    50K+ Users
                   </div>
                   <div className="flex items-center">
                     <Target className="mr-1 h-4 w-4 text-purple-400" />

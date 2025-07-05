@@ -1322,7 +1322,7 @@ const Index = () => {
                     <h3 className="text-white font-semibold mb-2">
                       Why Choose Us?
                     </h3>
-                    <div className="grid grid-cols-2 gap-4 text-sm">
+                    <div className="grid grid-cols-3 gap-4 text-sm">
                       <div className="text-center">
                         <div className="text-2xl mb-1">⚡</div>
                         <div className="text-gray-300">Instant Delivery</div>
@@ -1334,10 +1334,6 @@ const Index = () => {
                       <div className="text-center">
                         <div className="text-2xl mb-1">💰</div>
                         <div className="text-gray-300">Best Prices</div>
-                      </div>
-                      <div className="text-center">
-                        <div className="text-2xl mb-1">🎮</div>
-                        <div className="text-gray-300">50K+ Users</div>
                       </div>
                     </div>
                   </div>

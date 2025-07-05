@@ -323,7 +323,7 @@ const featuredPackages = [
   },
   {
     value: "1weekly86",
-    diamonds: "1× Weekly Pass & 86💎",
+    diamonds: "1× Weekly Pass & 86���",
     price: 230,
     originalPrice: 320,
     discount: 28,
@@ -760,7 +760,7 @@ const Index = () => {
                     <Label htmlFor="payment" className="text-white font-medium">
                       Payment Method *
                     </Label>
-                    <div className="grid grid-cols-2 gap-3">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       {paymentMethods.map((method) => (
                         <Button
                           key={method.value}
@@ -770,7 +770,7 @@ const Index = () => {
                               ? "default"
                               : "outline"
                           }
-                          className={`h-12 ${
+                          className={`h-12 text-sm sm:text-base ${
                             paymentMethod === method.value
                               ? "bg-purple-600 hover:bg-purple-700 border-purple-500"
                               : "bg-white/10 hover:bg-white/20 border-purple-500/30 text-white"

@@ -900,7 +900,7 @@ const Index = () => {
                           : "bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white"
                       } transition-all duration-300`}
                       onClick={() => {
-                        setSelectedDiamonds(pkg.diamonds);
+                        setSelectedDiamonds(pkg.value);
                         document
                           .getElementById("recharge-form")
                           ?.scrollIntoView({ behavior: "smooth" });
